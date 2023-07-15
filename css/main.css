@@ -1,0 +1,8 @@
+body {
+  font-family: "Catamaran", sans-serif;
+}
+#hero {
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+}
