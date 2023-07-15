@@ -14,27 +14,38 @@
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/tailwindcss" href="" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css" />
     <!-- Iconscout -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <!-- Tailwind CSS Config File -->
+    <script src="js/config.js"></script>
     <title>AB Relocation and Cleaning Service</title>
   </head>
   <body>
     <!-- Top Navigation Menu for Contact Info -->
-    <div class="top_nav flex justify-between p-3">
+    <div class="top_nav flex justify-between p-1 border-b-2 border-grey md:p-3">
       <div class="inline-block my-auto">
-        <a class="mr-3" href="tel:+2348024342548"> Phone: +2348024342548</a>
-        <a class="mr-3" href="mailto:abrelocationservices@gmail.com">
-          Email: abrelocationservices@gmail.com</a
+        <a class="mr-3" href="tel:+2348024342548"
+          ><span class="hidden md:inline-block">Phone: </span>+2348024342548</a
         >
-        <p class="inline-block">Opening Time: Mon-Sat: 8:00am-9:00pm</p>
+        <a class="mr-3" href="mailto:abrelocationservices@gmail.com">
+          <span class="hidden md:inline-block">Email: </span
+          >abrelocationservices@gmail.com</a
+        >
+        <p class="inline-block">
+          <span class="hidden md:inline-block">Opening Time:</span> Mon-Sat:
+          8:00am-9:00pm
+        </p>
       </div>
-      <div class="inline-block">
+      <div class="hidden md:inline-block">
         <a class="mr-3" href="https://m.facebook.com/112619148173500"
           ><i class="uil uil-facebook-f text-2xl"></i>
           <span>facebook</span>
@@ -151,21 +162,24 @@
             </g>
             <defs v-gra="od"></defs></svg
         ></a>
-        <ul class="flex justify-between gap-6 inline-block my-auto">
-          <li><a href="">Home</a></li>
-          <li><a href="">Relocation</a></li>
-          <li><a href="">Cleaning</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Get a Quote</a></li>
+        <ul class="justify-between gap-6 inline-block my-auto hidden md:flex">
+          <li class="my-auto"><a href="">Home</a></li>
+          <li class="my-auto"><a href="">Relocation</a></li>
+          <li class="my-auto"><a href="">Cleaning</a></li>
+          <li class="my-auto"><a href="">Contact</a></li>
+          <li class="my-auto"><a href="">About</a></li>
+          <li class="my-auto"><a href="">Get a Quote</a></li>
         </ul>
+        <button class="my-auto md:hidden">
+          <i class="uil uil-list-ul"></i><span>Menu</span>
+        </button>
       </div>
     </nav>
     <!-- Hero Section -->
-    <section>
-      <div>
-        <div class="overlay"></div>
-        <h1>
+    <section class="h-[70vh] grid place-items-center relative" id="hero">
+      <div class="overlay absolute w-full h-full bg-black opacity-30"></div>
+      <div class="w-7/12 mx-auto z-10 text-white">
+        <h1 class="text-2xl font-bold my-4">
           #NO 1 Cleaning and Relocation Service Company in Edo State, Nigeria.
         </h1>
         <p>
@@ -178,9 +192,55 @@
           as commercial cleaning services. Choose AB Relocation and Maintenance
           Services for a smooth transition.
         </p>
-        <div class="inline-block flex gap-6">
-          <a href="">Get a Relocation Quote!</a>
-          <a href="">Get a Cleaning Quote!</a>
+        <div class="inline-block flex gap-6 mt-4">
+          <a href="" class="py-2 px-4 bg-primaryRed rounded-sm"
+            >Get a Relocation Quote! <i class="uil uil-corner-up-right"></i
+          ></a>
+          <a href="" class="py-2 px-4 bg-primaryRed rounded-sm"
+            >Get a Cleaning Quote! <i class="uil uil-corner-up-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- Service Section -->
+    <section class="">
+      <div class="text-center">
+        <h1>What we offer</h1>
+        <p>Our Services</p>
+        <p>
+          Amongst the best moving and maintenance service companies in Edo,
+          Lagos, Abuja and Nigeria; AB Relocation and Maintenance Services is
+          the preferred moving company in Edo Nigeria. Regardless of your type
+          of move, AB Relocation and Maintenance Services is the relocation
+          service provider to move you. Whether you are relocating and need
+          property movers Benin City or within any area in Edo State, from Abuja
+          to Port Harcourt, from Ibadan to Asaba Delta State, or from any state
+          in Nigeria to another; our swift and professional team of property
+          movers and packers are always ready to move your properties.
+        </p>
+      </div>
+      <div class="services flex justify-center">
+        <!-- Relocation Service -->
+        <div>
+          <div class="w-1/5 mx-auto bg-primaryRed">
+            <img src="img/cleaning.jpg" class="w-full" alt="" />
+          </div>
+          <div>
+            <h2>Relocation Services</h2>
+            <p>Planning to relocate?</p>
+            <a href="">Help me Move</a>
+          </div>
+        </div>
+        <!-- Cleaning Service -->
+        <div>
+          <div class="w-1/5 mx-auto">
+            <img src="img/cleaning.jpg" class="w-full" alt="" />
+          </div>
+          <div>
+            <h2>Cleaning Services</h2>
+            <p>We offer cleaning Services</p>
+            <a href="">Help me Clean</a>
+          </div>
         </div>
       </div>
     </section>
