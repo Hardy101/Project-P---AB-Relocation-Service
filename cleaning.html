@@ -388,7 +388,7 @@
         <h5 class="font-bold">
           Fields marked with <font color="red">*</font> are required
         </h5>
-        <div class="progress-container border border-terGrey h-4">
+        <div class="progress-container border border-terGrey h-4 rounded-2xl">
           <div class="progress"></div>
         </div>
         <div class="forms flex">
@@ -399,13 +399,13 @@
           >
             <!-- {% csrf_token %} -->
             <div id="form2" class="Form2 w-full">
-              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+              <div class="form__div flex gap-4 mt-8 my-2 mx-0 w-full">
                 <div class="sub-div w-1/2">
                   <label for="first-name">
                     First Name <font color="red">*</font> <br
                   /></label>
                   <input
-                    class="adj w-full border border-terGrey py-1 focus:outline-none"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
                     id="first-name"
                     type="text"
                     name="CLfirst_name"
@@ -416,7 +416,7 @@
                     Last Name <font color="red">*</font> <br
                   /></label>
                   <input
-                    class="adj w-full border border-terGrey py-1 focus:outline-none"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
                     id="last-name"
                     type="text"
                     name="CLlast_name"
@@ -424,13 +424,13 @@
                 </div>
               </div>
 
-              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+              <div class="form__div flex gap-4 mt-8 mb-4 mx-0 w-full">
                 <div class="sub-div w-1/2">
                   <label for="email">
                     Email <font color="red">*</font> <br
                   /></label>
                   <input
-                    class="adj w-full border border-terGrey py-1 focus:outline-none"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
                     id="first-name"
                     type="email"
                     name="CLemail"
@@ -441,7 +441,7 @@
                     Phone <font color="red">*</font> <br
                   /></label>
                   <input
-                    class="adj w-full border border-terGrey py-1 focus:outline-none"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
                     id="phone"
                     type="phone"
                     name="CLphone"

@@ -24,15 +24,15 @@ function toggleFAQ(event) {
   faqIcon.classList.toggle("rotate-180");
 }
 // Forms Relocation
-var form1 = document.querySelectorAll(".Form1");
-var form2 = document.querySelectorAll(".Form2");
-var form3 = document.querySelectorAll(".Form3");
-var Next1 = document.querySelectorAll(".next1");
-var Next2 = document.querySelectorAll(".next2");
-var Back1 = document.querySelectorAll(".prev2");
-var Back2 = document.querySelectorAll(".prev3");
-var Submit = document.querySelectorAll(".submit");
-var progress = document.querySelectorAll(".progress");
+let form1 = document.querySelectorAll(".Form1");
+let form2 = document.querySelectorAll(".Form2");
+let form3 = document.querySelectorAll(".Form3");
+let Next1 = document.querySelectorAll(".next1");
+let Next2 = document.querySelectorAll(".next2");
+let Back1 = document.querySelectorAll(".prev2");
+let Back2 = document.querySelectorAll(".prev3");
+let Submit = document.querySelectorAll(".submit");
+let progress = document.querySelectorAll(".progress");
 
 Next1.forEach((Next1) => {
   Next1.onclick = function () {
