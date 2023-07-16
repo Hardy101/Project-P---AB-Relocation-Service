@@ -23,69 +23,87 @@ function toggleFAQ(event) {
   // Toggle rotation for the clicked FAQ item icon
   faqIcon.classList.toggle("rotate-180");
 }
-// Swiper
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  autoplay: {
-    delay: 4000,
-  },
+// Forms Relocation
+var form1 = document.querySelectorAll(".Form1");
+var form2 = document.querySelectorAll(".Form2");
+var form3 = document.querySelectorAll(".Form3");
+var Next1 = document.querySelectorAll(".next1");
+var Next2 = document.querySelectorAll(".next2");
+var Back1 = document.querySelectorAll(".prev2");
+var Back2 = document.querySelectorAll(".prev3");
+var Submit = document.querySelectorAll(".submit");
+var progress = document.querySelectorAll(".progress");
 
-  direction: "horizontal",
-  loop: true,
-  effect: "coverflow",
-  grabCursor: false,
-  centeredSlides: true,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 2,
-  },
+Next1.forEach((Next1) => {
+  Next1.onclick = function () {
+    form1.forEach((form1) => {
+      form1.style.display = "none";
+    });
+    form2.forEach((form2) => {
+      form2.style.display = "block";
+    });
+    progress.forEach((progress) => {
+      progress.style.width = "33.33%";
+    });
+  };
+});
 
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      centeredSlides: false,
+Back1.forEach((Back1) => {
+  Back1.onclick = function () {
+    form1.forEach((form1) => {
+      form1.style.display = "block";
+    });
+    form2.forEach((form2) => {
+      form2.style.display = "none";
+    });
+    form3.forEach((form3) => {
+      form3.style.display = "none";
+    });
+    progress.forEach((progress) => {
+      progress.style.width = "0%";
+    });
+  };
+});
 
-      autoplay: {
-        delay: 4000,
-      },
-    },
+Next2.forEach((Next2) => {
+  Next2.onclick = function () {
+    form1.forEach((form1) => {
+      form1.style.display = "none";
+    });
+    form2.forEach((form2) => {
+      form2.style.display = "none";
+    });
+    form3.forEach((form3) => {
+      form3.style.display = "grid";
+      form3.style.gridTemplateColumns = "1fr";
+    });
+    progress.forEach((progress) => {
+      progress.style.width = "66.66%";
+    });
+  };
+});
 
-    600: {
-      slidesPerView: 3,
-      direction: "horizontal",
-      loop: true,
-      effect: "coverflow",
-      grabCursor: false,
-      centeredSlides: true,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2,
-      },
-      autoplay: {
-        delay: 4000,
-      },
-    },
+Back2.forEach((Back2) => {
+  Back2.onclick = function () {
+    form1.forEach((form1) => {
+      form1.style.display = "none";
+    });
+    form2.forEach((form2) => {
+      form2.style.display = "block";
+    });
+    form3.forEach((form3) => {
+      form3.style.display = "none";
+    });
+    progress.forEach((progress) => {
+      progress.style.width = "33.33%";
+    });
+  };
+});
 
-    1200: {
-      slidesPerView: 5,
-      direction: "horizontal",
-      loop: true,
-      effect: "coverflow",
-      grabCursor: false,
-      centeredSlides: true,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2,
-      },
-      autoplay: {
-        delay: 4000,
-      },
-    },
-  },
+Submit.forEach((Submit) => {
+  Submit.onclick = function () {
+    progress.forEach((progress) => {
+      progress.style.width = "100%";
+    });
+  };
 });

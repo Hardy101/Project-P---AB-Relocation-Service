@@ -354,178 +354,461 @@
       </div>
     </section>
     <!-- Moving Quote -->
-    <section>
-      <div class="page bg-white w-4/5 mx-auto relative rounded-sm p-4">
-        <h3>Moving Quote</h3>
-        <h5> Fields marked with <font color="red">*</font> are required<h5>
-        <div class="progress-container">
-            <div class="progress"></div>
+    <section class="py-16 px-10">
+      <div class="page bg-white w-7/12 mx-auto relative rounded-sm p-4">
+        <h3 class="font-bold text-xl">Moving Quote</h3>
+        <h5 class="font-bold">
+          Fields marked with <font color="red">*</font> are required
+        </h5>
+        <div class="progress-container border border-terGrey h-4">
+          <div class="progress"></div>
         </div>
-        <div class="forms flex">    
-            <form method="post"  enctype="multipart/form-data" class="flex justify-between w-full">
-                <!-- {% csrf_token %} -->
-                <div id="form1" class="Form1 w-full">
-                    <div class="form__div flex gap-4 my-2 mx-0 w-full">
-                            <div class="sub-div w-1/2">
-                                <label for="adressfrom"> Moving from Adress <font color="red">*</font> <br></label>
-                                <input autocomplete="address-line1" id="adressfrom" name="adressfrom" placeholder="Enter a place" type="text" class="adj w-full border border-grey py-1 focus:outline-none" required>
-                            </div>
-                            <div class="sub-div w-1/2">
-                                <label for="adressto"> Moving to Adress <font color="red">*</font> <br></label>
-                                <input autocomplete="address-line1" name="adressto" id="adressto" placeholder="Enter a place" type="text" class="adj w-full border border-grey py-1 focus:outline-none" required>
-                            </div>
-                    </div>
-                    
-                    <div class="form__div flex gap-4 my-2 mx-0 w-full">
-                      <div class="sub-div w-1/2">
-                                <label for="apartment-from"> Moving from Apartment <font color="red">*</font> <br></label>
-                                <select name="apartment_from" class="adj w-full" >
-                                    <option value="Mini Flat">Mini Flat</option>
-                                    <option value="Flat">Flat</option>
-                                    <option value="Terrace">Terrace</option>
-                                    <option value="Office Space">Office Space</option>
-                                    <option value="Others">Others</option>
-                                </select>
-                            </div>
-                                
-                            <div class="sub-div">
-                                <label for="apartment-to"> Moving to Apartment <font color="red">*</font> <br></label>
-                                <select name="apartment_to"  class="adj w-full">
-                                    <option  value="Mini Flat">Mini Flat</option>
-                                    <option value="Flat">Flat</option>
-                                    <option value="Terrace">Terrace</option>
-                                    <option value="Office Space">Office Space</option>
-                                    <option value="Others">Others</option>
-                                </select>
-                            </div>
-                    </div>
-                        
-                    <div class="form__div">
-                            <div class="sub-div">
-                                <label for="bedroom-from"> Moving from Bedroom(s)  <br></label>
-                                <select name="bedroom_from" class="adj" >
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5 and above">5 and above</option>
-                                </select>
-                            </div>
-                            <div class="sub-div">
-                                <label for="bedroom-to"> Moving to Bedroom(s)  <br></label>
-                                <select name="bedroom_to" class="adj" >
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5 and above">5 and above</option>
-                                </select>
-                            </div>
-                    </div>
-                        
-                    <div class="form__div">
-                            <div class="sub-div">
-                                <label for="floor-from"> Moving from Floor  <br></label>
-                                <select name="floor_from" class="adj" >
-                                    <option value="Ground Floor"> Ground Floor</option>
-                                    <option value="1st Floor">1st Floor</option>
-                                    <option value="2nd Floor">2nd Floor</option>
-                                    <option value="3rd Floor">3rd Floor</option>
-                                    <option value="4th Floor">4th Floor</option>
-                                    <option value="5th Floor and above">5th Floor and above</option>
-                                </select>
-                            </div>
-                            <div class="sub-div">
-                                <label for="floor-to"> Moving to Floor  <br></label>
-                                <select name="floor_to" class="adj" >
-                                    <option value="Ground Floor"> Ground Floor</option>
-                                    <option value="1st Floor">1st Floor</option>
-                                    <option value="2nd Floor">2nd Floor</option>
-                                    <option value="3rd Floor">3rd Floor</option>
-                                    <option value="4th Floor">4th Floor</option>
-                                    <option value="5th Floor and above">5th Floor and above</option>
-                                </select>
-                            </div>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="button">
-                        <button class="next1 btn" type ="button" > Next</button>
-                    </div>
+        <div class="forms flex">
+          <form
+            method="post"
+            enctype="multipart/form-data"
+            class="flex justify-between w-full"
+          >
+            <!-- {% csrf_token %} -->
+            <div id="form1" class="Form1 w-full">
+              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+                <div class="sub-div w-1/2">
+                  <label for="adressfrom">
+                    Moving from Adress <font color="red">*</font> <br
+                  /></label>
+                  <input
+                    autocomplete="address-line1"
+                    id="adressfrom"
+                    name="adressfrom"
+                    placeholder="Enter a place"
+                    type="text"
+                    class="adj w-full border border-terGrey py-1 focus:outline-none"
+                    required
+                  />
                 </div>
-    
-                <div id="form2" class="Form2 hidden">
-                    <div class="form__div">
-                            <div class="sub-div">
-                                <label for="first-name"> First Name <font color="red">*</font> <br></label>
-                                    <input  class="adj" id="first-name" type="text"  name="Mfirst_name" >
-                            </div>
-                            <div class="sub-div">
-                                    <label for="last-name"> Last Name <font color="red">*</font> <br></label>
-                                    <input class="adj"  id="last-name" type="text"  name="Mlast_name" >
-                            </div>
-                    </div>
-                    
-                    <div class="form__div">
-                        <div class="sub-div">
-                            <label for="email"> Email <font color="red">*</font> <br></label>
-                                <input class="adj"  id="first-name" type="email"  name="Memail">
-                        </div>
-                        <div class="sub-div">
-                            <label for="phone"> Phone <font color="red">*</font> <br></label>
-                            <input class="adj" id="phone" type="phone"  name="Mphone" >
-                        </div>
-                            
-                    </div>
-                    <div class="button">
-                        <button class="prev2 btn" type ="button" > Previous</button>
-                        <button class="next2 btn"  type ="button"> Next</button>
-                    </div>
+                <div class="sub-div w-1/2">
+                  <label for="adressto">
+                    Moving to Adress <font color="red">*</font> <br
+                  /></label>
+                  <input
+                    autocomplete="address-line1"
+                    name="adressto"
+                    id="adressto"
+                    placeholder="Enter a place"
+                    type="text"
+                    class="adj w-full border border-terGrey py-1 focus:outline-none"
+                    required
+                  />
                 </div>
-       
-                <div class="Form3 hidden">
-                    <div class="form__div">
-                        <div class="sub-div this" >
-                            <p>	 What services may we assist you with? <font color="red">*</font><p> 
-                            <p><input name = 'myCheckbox1' name="Local Move" value="Local Move" type="checkbox"> Local Move</p>
-                            <p><input name = 'myCheckbox2' name="Long distance move" value="Long distance move" type="checkbox"> Long distance move</p>
-                            <p><input name = 'myCheckbox3' name="Office move" value="Office move" type="checkbox"> Office move</p>
-                            <p><input name = 'myCheckbox4' name="Packing and Loading" value="Packing and Loading" type="checkbox"> Packing and Loading</p>
-                            <p><input name = 'myCheckbox5' name="Unpacking and Rearranging" value="Unpacking and Rearranging" type="checkbox"> Unpacking and Rearranging</p>
-                            <p><input name = 'myCheckbox6' name="Uninstallation and Installation of Electrical Appliances" value="Uninstallation And Installation of Electrical Appliances" type="checkbox"> Uninstallation And Installation of Electrical Appliances</p>
-                            <p><input name = 'myCheckbox7' name="Storage" value="Storage" type="checkbox"> Storage</p>
-                            <p><input name = 'myCheckbox8' name="Truck rental" value="Truck rental" type="checkbox"> Truck rental</p>
-                        </div>
-                        
-                        <div class="sub-div">
-                            <p>Upload A Video/ Images Of Your Apartment</p>
-                            <label for="select-file" > Select File </label>
-                            <input class="select-file" name="file" type="file">
-                            <br>
-                            <br>
-                            <h4>Booking Date <font color="red">*</font> <h4>
-                            
-                            <div>
-                                <p> Choose a Date and Time</p>
-                                <input name="Mdate" type="date">
-                                <input name="Mtime" type="time">
-                            </div>
-                            <br>
-                            <div>
-                                <h4> Enter Additional Moving Information</h4>
-                                <textarea name="Mtextarea" ></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="button">
-                        <button  type ="button" class="prev3 btn" > Previous</button>
-                        <button  type ="submit" class="submit btn" > Submit</button>
-                    </div>    
-                </div>      
-            </form>
-            <!-- <script src="settings.js"></script> -->
+              </div>
+
+              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+                <div class="sub-div w-1/2">
+                  <label for="apartment-from">
+                    Moving from Apartment <font color="red">*</font> <br
+                  /></label>
+                  <select
+                    name="apartment_from"
+                    class="adj w-full border border-terGrey py-1"
+                  >
+                    <option value="Mini Flat">Mini Flat</option>
+                    <option value="Flat">Flat</option>
+                    <option value="Terrace">Terrace</option>
+                    <option value="Office Space">Office Space</option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
+
+                <div class="sub-div w-1/2">
+                  <label for="apartment-to">
+                    Moving to Apartment <font color="red">*</font> <br
+                  /></label>
+                  <select
+                    name="apartment_to"
+                    class="adj w-full border border-terGrey py-1"
+                  >
+                    <option value="Mini Flat">Mini Flat</option>
+                    <option value="Flat">Flat</option>
+                    <option value="Terrace">Terrace</option>
+                    <option value="Office Space">Office Space</option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+                <div class="sub-div w-1/2">
+                  <label for="bedroom-from">
+                    Moving from Bedroom(s) <br
+                  /></label>
+                  <select
+                    name="bedroom_from"
+                    class="adj w-full border border-terGrey py-1"
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5 and above">5 and above</option>
+                  </select>
+                </div>
+                <div class="sub-div w-1/2">
+                  <label for="bedroom-to"> Moving to Bedroom(s) <br /></label>
+                  <select
+                    name="bedroom_to"
+                    class="adj w-full border border-terGrey py-1"
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5 and above">5 and above</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+                <div class="sub-div w-1/2">
+                  <label for="floor-from"> Moving from Floor <br /></label>
+                  <select
+                    name="floor_from"
+                    class="adj w-full border border-terGrey py-1"
+                  >
+                    <option value="Ground Floor">Ground Floor</option>
+                    <option value="1st Floor">1st Floor</option>
+                    <option value="2nd Floor">2nd Floor</option>
+                    <option value="3rd Floor">3rd Floor</option>
+                    <option value="4th Floor">4th Floor</option>
+                    <option value="5th Floor and above">
+                      5th Floor and above
+                    </option>
+                  </select>
+                </div>
+                <div class="sub-div w-1/2">
+                  <label for="floor-to"> Moving to Floor <br /></label>
+                  <select
+                    name="floor_to"
+                    class="adj w-full border border-terGrey py-1"
+                  >
+                    <option value="Ground Floor">Ground Floor</option>
+                    <option value="1st Floor">1st Floor</option>
+                    <option value="2nd Floor">2nd Floor</option>
+                    <option value="3rd Floor">3rd Floor</option>
+                    <option value="4th Floor">4th Floor</option>
+                    <option value="5th Floor and above">
+                      5th Floor and above
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <br />
+              <br />
+              <div class="button">
+                <button
+                  class="next1 btn rounded-sm text-white bg-secRed py-2 px-4"
+                  type="button"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+
+            <div id="form2" class="Form2 w-full">
+              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+                <div class="sub-div w-1/2">
+                  <label for="first-name">
+                    First Name <font color="red">*</font> <br
+                  /></label>
+                  <input
+                    class="adj w-full border border-terGrey py-1 focus:outline-none"
+                    id="first-name"
+                    type="text"
+                    name="Mfirst_name"
+                  />
+                </div>
+                <div class="sub-div w-1/2">
+                  <label for="last-name">
+                    Last Name <font color="red">*</font> <br
+                  /></label>
+                  <input
+                    class="adj w-full border border-terGrey py-1 focus:outline-none"
+                    id="last-name"
+                    type="text"
+                    name="Mlast_name"
+                  />
+                </div>
+              </div>
+
+              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+                <div class="sub-div w-1/2">
+                  <label for="email">
+                    Email <font color="red">*</font> <br
+                  /></label>
+                  <input
+                    class="adj w-full border border-terGrey py-1 focus:outline-none"
+                    id="first-name"
+                    type="email"
+                    name="Memail"
+                  />
+                </div>
+                <div class="sub-div w-1/2">
+                  <label for="phone">
+                    Phone <font color="red">*</font> <br
+                  /></label>
+                  <input
+                    class="adj w-full border border-terGrey py-1 focus:outline-none"
+                    id="phone"
+                    type="phone"
+                    name="Mphone"
+                  />
+                </div>
+              </div>
+              <div class="button">
+                <button
+                  class="prev2 btn rounded-sm text-white bg-secRed py-2 px-4"
+                  type="button"
+                >
+                  Previous
+                </button>
+                <button
+                  class="next2 btn rounded-sm text-white bg-secRed py-2 px-4"
+                  type="button"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+
+            <div class="Form3 w-full">
+              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+                <div class="sub-div this w-1/2">
+                  <p>
+                    What services may we assist you with?
+                    <font color="red">*</font>
+                  </p>
+                  <p></p>
+                  <p>
+                    <input
+                      name="myCheckbox1"
+                      name="Local Move"
+                      value="Local Move"
+                      type="checkbox"
+                    />
+                    Local Move
+                  </p>
+                  <p>
+                    <input
+                      name="myCheckbox2"
+                      name="Long distance move"
+                      value="Long distance move"
+                      type="checkbox"
+                    />
+                    Long distance move
+                  </p>
+                  <p>
+                    <input
+                      name="myCheckbox3"
+                      name="Office move"
+                      value="Office move"
+                      type="checkbox"
+                    />
+                    Office move
+                  </p>
+                  <p>
+                    <input
+                      name="myCheckbox4"
+                      name="Packing and Loading"
+                      value="Packing and Loading"
+                      type="checkbox"
+                    />
+                    Packing and Loading
+                  </p>
+                  <p>
+                    <input
+                      name="myCheckbox5"
+                      name="Unpacking and Rearranging"
+                      value="Unpacking and Rearranging"
+                      type="checkbox"
+                    />
+                    Unpacking and Rearranging
+                  </p>
+                  <p>
+                    <input
+                      name="myCheckbox6"
+                      name="Uninstallation and Installation of Electrical Appliances"
+                      value="Uninstallation And Installation of Electrical Appliances"
+                      type="checkbox"
+                    />
+                    Uninstallation And Installation of Electrical Appliances
+                  </p>
+                  <p>
+                    <input
+                      name="myCheckbox7"
+                      name="Storage"
+                      value="Storage"
+                      type="checkbox"
+                    />
+                    Storage
+                  </p>
+                  <p>
+                    <input
+                      name="myCheckbox8"
+                      name="Truck rental"
+                      value="Truck rental"
+                      type="checkbox"
+                    />
+                    Truck rental
+                  </p>
+                </div>
+
+                <div class="sub-div w-1/2">
+                  <label>Upload A Video/ Images Of Your Apartment</label>
+                  <label for="select-file"> Select File </label>
+                  <input
+                    class="select-file border border-secGrey"
+                    name="file"
+                    type="file"
+                  />
+
+                  <h4 class="font-bold mt-10">
+                    Booking Date <font color="red">*</font>
+                  </h4>
+
+                  <div>
+                    <p class="font-bold">Choose a Date and Time</p>
+                    <input
+                      name="Mdate"
+                      type="date"
+                      class="border border-secGrey"
+                    />
+                    <input
+                      name="Mtime"
+                      type="time"
+                      class="border border-secGrey"
+                    />
+                  </div>
+                  <br />
+                  <div>
+                    <h4>Enter Additional Moving Information</h4>
+                    <textarea
+                      name="Mtextarea"
+                      class="border border-secGrey"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="button">
+                <button
+                  type="button"
+                  class="prev3 btn rounded-sm text-white bg-secRed py-2 px-4"
+                >
+                  Previous
+                </button>
+                <button
+                  type="submit"
+                  class="submit btn rounded-sm text-white bg-secRed py-2 px-4"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
-    </div>
+      </div>
     </section>
+
+    <!-- Why Choose us -->
+    <section class="px-10 py-10 text-white bg-primaryRed md:px-16">
+      <div class="flex justify-between flex-col md:flex-row">
+        <div class="mb-6 md:my-auto">
+          <span class="text-primaryGrey block">WHY CHOOSE US</span>
+          <span class="font-bold text-4xl">Our Advantages</span>
+        </div>
+        <div class="flex flex-wrap gap-10 justify-between">
+          <div class="inline-block">
+            <span class="text-6xl">27</span>
+            <span class="block mt-3">Movers and Packers</span>
+          </div>
+          <div class="inline-block">
+            <span class="text-6xl">30</span>
+            <span class="block mt-3">professional cleaners</span>
+          </div>
+          <div class="inline-block">
+            <span class="text-6xl">995</span>
+            <span class="block mt-3">Moving jobs done</span>
+          </div>
+          <div class="inline-block">
+            <span class="text-6xl">1103</span>
+            <span class="block mt-3">Cleaning jobs done</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Book a service -->
+    <section class="px-10 py-10 text-white bg-primaryBlack md:px-16">
+      <div class="flex justify-center gap-10 flex-col md:flex-row">
+        <div class="mb-6 md:my-auto">
+          <span class="text-4xl block">Book a Service Today</span>
+          <span class="text-xl">We are always at your service</span>
+        </div>
+        <div class="flex flex-wrap gap-10 justify-between">
+          <div class="inline-block">
+            <a class="bg-primaryRed px-5 py-2 text-xl rounded-sm"
+              >Get a Quote <i class="uil uil-corner-up-right"></i
+            ></a>
+            <span class="block mt-4 text-center">or call: 08024342548</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="px-10 py-10 text-white bg-secGrey md:px-16">
+      <div>
+        <div class="flex gap-5 justify-between flex-col md:flex-row">
+          <!-- First DIV -->
+          <div class="w-full md:w-4/12">
+            <h3>ABRM SERVICES</h3>
+            <p>
+              AB RELOCATION AND MAINTENANCE SERVICES is a professional service
+              company that provides moving and cleaning solutions to make your
+              relocating process easy and stress-free and meet your cleaning
+              demands. Contact us today for a free estimate!
+            </p>
+          </div>
+          <!-- Second Div -->
+          <div class="w-full md:w-1/5">
+            <ul>
+              <li><span>Quick Links</span></li>
+              <li><a href="">Moving Service</a></li>
+              <li><a href="">Cleaning Service</a></li>
+              <li><a href="">About Us</a></li>
+            </ul>
+          </div>
+          <!-- Third DIV -->
+          <div class="w-full md:w-1/5">
+            <ul>
+              <li><span>Company</span></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms and Conditions</a></li>
+              <li><a href="">Refund Policy</a></li>
+            </ul>
+          </div>
+          <!-- Fourth DIV -->
+          <div class="w-full md:w-1/5">
+            <ul>
+              <li><span>Contact Us</span></li>
+              <li><span>210, Ekenwan Rd, Benin City, Edo State</span></li>
+              <li><a href="tel:+2348024342548">08024342548</a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-5">
+          <span>Copyright 2022 ABRM_SERVICES. All right reserved.</span>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
