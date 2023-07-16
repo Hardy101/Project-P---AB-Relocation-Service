@@ -36,7 +36,9 @@
   </head>
   <body>
     <!-- Top Navigation Menu for Contact Info -->
-    <div class="top_nav flex justify-between p-1 border-b-2 border-grey md:p-3">
+    <div
+      class="sticky top-0 w-full bg-white top_nav flex justify-between p-1 border-b-2 border-grey z-20"
+    >
       <div class="inline-block my-auto">
         <a class="mr-3" href="tel:+2348024342548"
           ><span class="hidden md:inline-block">Phone: </span>+2348024342548</a
@@ -67,7 +69,7 @@
     </div>
     <!-- Navigation Menu -->
     <nav>
-      <div class="flex justify-between p-3">
+      <div class="bg-white flex justify-between p-3">
         <a href="">
           <svg
             data-v-2cb57da0=""
@@ -168,12 +170,18 @@
             <defs v-gra="od"></defs></svg
         ></a>
         <ul class="justify-between gap-6 inline-block my-auto hidden md:flex">
-          <li class="my-auto"><a href="">Home</a></li>
+          <li class="my-auto"><a href="index.html">Home</a></li>
           <li class="my-auto"><a href="relocation.html">Relocation</a></li>
-          <li class="my-auto"><a href="">Cleaning</a></li>
-          <li class="my-auto"><a href="">Contact</a></li>
-          <li class="my-auto"><a href="">About</a></li>
-          <li class="my-auto"><a href="">Get a Quote</a></li>
+          <li class="my-auto"><a href="cleaning.html">Cleaning</a></li>
+          <li class="my-auto"><a href="contact.html">Contact</a></li>
+          <li class="my-auto"><a href="about.html">About</a></li>
+          <li class="my-auto">
+            <a
+              href="quotes.html"
+              class="px-3 py-2 bg-primaryRed text-white rounded-md"
+              >Get a Quote</a
+            >
+          </li>
         </ul>
         <button class="my-auto md:hidden flex gap-2">
           <i class="uil uil-list-ul my-auto text-2xl"></i
