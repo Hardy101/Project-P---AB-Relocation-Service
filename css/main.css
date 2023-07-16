@@ -9,12 +9,16 @@ body {
   background-position: center;
   background-size: cover;
 }
+.cleaning {
+  background-image: url("../img/cleaning-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
 .page {
   box-shadow: 2px 5px 9px red;
 }
 
 .Form2 {
-  display: none;
   animation: appear 0.6s linear forwards;
 }
 
@@ -23,7 +27,7 @@ body {
   animation: appear 0.6s linear forwards;
 }
 /* Animations */
-@keyframes appear { 
+@keyframes appear {
   0% {
     opacity: 0;
     /* transform: translateX(15rem); */
