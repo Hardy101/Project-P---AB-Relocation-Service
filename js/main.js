@@ -1,9 +1,22 @@
-let swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+if (document.querySelector(".mySwiper")) {
+  let swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
+// File input
+if (document.getElementById("file-input")) {
+  document
+    .getElementById("file-input")
+    .addEventListener("change", function (event) {
+      let fileName = event.target.files[0].name;
+      let label = document.querySelector(".custom-file-label");
+      label.textContent = fileName;
+    });
+}
+
 // Sidebar Toggle
 function toggleSidebar() {
   sideBar.classList.toggle("right-[-570px]");
