@@ -34,40 +34,42 @@
     <script src="js/config.js"></script>
     <title>AB Relocation and Cleaning Service</title>
   </head>
-  <body>
+  <body class="bg-[#f5f5f5] relative">
     <!-- Top Navigation Menu for Contact Info -->
-    <div class="top_nav flex justify-between p-1 border-b-2 border-grey md:p-3">
-      <div class="inline-block my-auto">
-        <a class="mr-3" href="tel:+2348024342548"
-          ><span class="hidden md:inline-block">Phone: </span>+2348024342548</a
-        >
-        <a class="mr-3" href="mailto:abrelocationservices@gmail.com">
-          <span class="hidden md:inline-block">Email: </span
-          >abrelocationservices@gmail.com</a
-        >
-        <p class="inline-block">
-          <span class="hidden md:inline-block">Opening Time:</span> Mon-Sat:
-          8:00am-9:00pm
-        </p>
-      </div>
-      <div class="hidden md:inline-block">
-        <a class="mr-3" href="https://m.facebook.com/112619148173500"
-          ><i class="uil uil-facebook-f text-2xl"></i>
-          <span>facebook</span>
-        </a>
-        <a class="mr-3" href="https://www.instagram.com/abrm_services/"
-          ><i class="uil uil-instagram text-2xl"></i>
-          <span>instagram</span>
-        </a>
-        <a href="mailto:abrelocationservices@gmail.com"
-          ><i class="uil uil-envelope-alt text-2xl"></i>
-          <span>email</span>
-        </a>
-      </div>
+    <div
+    class="sticky top-0 w-full bg-white top_nav flex justify-between p-1 border-b-2 border-grey z-20"
+  >
+    <div class="inline-block my-auto">
+      <a class="mr-3" href="tel:+2348024342548"
+        ><span class="hidden md:inline-block">Phone: </span>+2348024342548</a
+      >
+      <a class="mr-3" href="mailto:abrelocationservices@gmail.com">
+        <span class="hidden md:inline-block">Email: </span
+        >abrelocationservices@gmail.com</a
+      >
+      <p class="inline-block">
+        <span class="hidden md:inline-block">Opening Time:</span> Mon-Sat:
+        8:00am-9:00pm
+      </p>
     </div>
+    <div class="hidden md:inline-block">
+      <a class="mr-3" href="https://m.facebook.com/112619148173500"
+        ><i class="uil uil-facebook-f text-2xl"></i>
+        <span>facebook</span>
+      </a>
+      <a class="mr-3" href="https://www.instagram.com/abrm_services/"
+        ><i class="uil uil-instagram text-2xl"></i>
+        <span>instagram</span>
+      </a>
+      <a href="mailto:abrelocationservices@gmail.com"
+        ><i class="uil uil-envelope-alt text-2xl"></i>
+        <span>email</span>
+      </a>
+    </div>
+  </div>
     <!-- Navigation Menu -->
     <nav>
-      <div class="flex justify-between p-3">
+      <div class="bg-white flex justify-between p-3">
         <a href="">
           <svg
             data-v-2cb57da0=""
@@ -173,19 +175,53 @@
           <li class="my-auto"><a href="cleaning.html">Cleaning</a></li>
           <li class="my-auto"><a href="contact.html">Contact</a></li>
           <li class="my-auto"><a href="about.html">About</a></li>
-          <li class="my-auto"><a href="quotes.html">Get a Quote</a></li>
+          <li class="my-auto">
+            <a
+              href="quotes.html"
+              class="px-3 py-2 bg-primaryRed text-white rounded-md"
+              >Get a Quote</a
+            >
+          </li>
         </ul>
-        <button class="my-auto md:hidden flex gap-2">
+        <button class="my-auto md:hidden flex gap-2 toggleBtn">
           <i class="uil uil-list-ul my-auto text-2xl"></i
           ><span class="my-auto">Menu</span>
         </button>
       </div>
     </nav>
+      <!-- Side Bar -->
+      <div
+      class="sidebar w-3/5 h-full fixed right-[-570px] px-5 z-30 bg-white md:hidden"
+    >
+      <ul>
+        <li class="my-2 text-right">
+          <button
+            class="px-4 py-2 bg-primaryRed text-white rounded-md toggleBtn"
+          >
+            Close <i class="uil uil-arrow-from-right"></i>
+          </button>
+        </li>
+        <li class="mb-2 mt-4"><a href="index.html">Home</a></li>
+        <li class="my-2"><a href="about.html">About</a></li>
+        <li class="my-2">
+          <a href="cleaning.html"
+            >Cleaning <i class="uil uil-angle-down"></i
+          ></a>
+        </li>
+        <li class="my-2">
+          <a href="relocation.html"
+            >Relocation <i class="uil uil-angle-down"></i
+          ></a>
+        </li>
+        <li class="my-2"><a href="contact.html">Contact</a></li>
+        <li class="my-2"><a href="quotes.html">Get a quote</a></li>
+      </ul>
+    </div>
     <!-- Hero Section -->
     <section
       class="h-[90vh] grid place-items-center relative px-3 md:h-[70vh] cleaning"
     >
-      <div class="overlay absolute w-full h-full bg-black opacity-30"></div>
+      <div class="overlay absolute w-full h-full bg-black opacity-50"></div>
       <div class="w-full mx-auto z-10 text-white md:w-7/12">
         <h1 class="text-2xl font-bold my-4">Cleaning Service</h1>
         <p>
@@ -230,14 +266,14 @@
         </p>
       </div>
       <div
-        class="services flex gap-20 flex-col flex-wrap justify-between mt-10 md:flex-row"
+        class="services flex gap-20 flex-wrap justify-between mt-16 md:flex-row"
       >
         <!-- Local move -->
-        <div class="service-1 w-full md:w-3/12 text-center">
+        <div class="service-1 w-4/12 md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/janitor.jpg" alt="" class="w-full" />
           </div>
-          <div>
+          <div class="mt-10">
             <h2 class="text-2xl font-bold">Janitorial Cleaning</h2>
             <p>
               Experience a hassle-free move with our expert assistance. Get
@@ -246,150 +282,114 @@
           </div>
         </div>
         <!-- After Party -->
-        <div class="service-2 w-full md:w-3/12 text-center">
+        <div class="service-2 w-4/12 md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/after-party.jpg" alt="" class="w-full" />
           </div>
-          <div>
+          <div class="mt-10">
             <h2 class="text-2xl font-bold">After Party Cleanup</h2>
             <p>
               Transform your space with our exceptional cleaning services. Book
               now and enjoy a pristine and refreshed environment like never
               before.
             </p>
-            <a
-              href=""
-              class="bg-primaryRed text-white p-2 mt-3 inline-block rounded-sm"
-              >Let's help you clean</a
-            >
           </div>
         </div>
         <!-- Residential -->
-        <div class="service-2 w-full md:w-3/12 text-center">
+        <div class="service-2 w-4/12 md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/home-cleaning.jpg" alt="" class="w-full" />
           </div>
-          <div>
+          <div class="mt-10">
             <h2 class="text-2xl font-bold">Residential Cleaning</h2>
             <p>
               Transform your space with our exceptional cleaning services. Book
               now and enjoy a pristine and refreshed environment like never
               before.
             </p>
-            <a
-              href=""
-              class="bg-primaryRed text-white p-2 mt-3 inline-block rounded-sm"
-              >Let's help you clean</a
-            >
           </div>
         </div>
         <!-- Rug Cleaning -->
-        <div class="service-2 w-full md:w-3/12 text-center">
+        <div class="service-2 w-4/12 md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/rug.jpg" alt="" class="w-full" />
           </div>
-          <div>
+          <div class="mt-10">
             <h2 class="text-2xl font-bold">Rug Cleaning</h2>
             <p>
               Transform your space with our exceptional cleaning services. Book
               now and enjoy a pristine and refreshed environment like never
               before.
             </p>
-            <a
-              href=""
-              class="bg-primaryRed text-white p-2 mt-3 inline-block rounded-sm"
-              >Let's help you clean</a
-            >
           </div>
         </div>
         <!-- Restaurant Cleaning -->
-        <div class="service-2 w-full md:w-3/12 text-center">
+        <div class="service-2 w-4/12 md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/restaurant.jpg" alt="" class="w-full" />
           </div>
-          <div>
+          <div class="mt-10">
             <h2 class="text-2xl font-bold">Restaurant Cleaning</h2>
             <p>
               Transform your space with our exceptional cleaning services. Book
               now and enjoy a pristine and refreshed environment like never
               before.
             </p>
-            <a
-              href=""
-              class="bg-primaryRed text-white p-2 mt-3 inline-block rounded-sm"
-              >Let's help you clean</a
-            >
           </div>
-          <!-- =========== -->
         </div>
         <!-- Post Construction Cleanup -->
-        <div class="service-2 w-full md:w-3/12 text-center">
+        <div class="service-2 w-4/12 md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/construction.jpg" alt="" class="w-full" />
           </div>
-          <div>
+          <div class="mt-10">
             <h2 class="text-2xl font-bold">Post Construction Cleaning</h2>
             <p>
               Transform your space with our exceptional cleaning services. Book
               now and enjoy a pristine and refreshed environment like never
               before.
             </p>
-            <a
-              href=""
-              class="bg-primaryRed text-white p-2 mt-3 inline-block rounded-sm"
-              >Let's help you clean</a
-            >
           </div>
         </div>
         <!-- Window Cleaning -->
-        <div class="service-2 w-full md:w-3/12 text-center">
+        <div class="service-2 w-4/12 md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/window.jpg" alt="" class="w-full" />
           </div>
-          <div>
+          <div class="mt-10">
             <h2 class="text-2xl font-bold">Window Cleaning Services</h2>
             <p>
               Transform your space with our exceptional cleaning services. Book
               now and enjoy a pristine and refreshed environment like never
               before.
             </p>
-            <a
-              href=""
-              class="bg-primaryRed text-white p-2 mt-3 inline-block rounded-sm"
-              >Let's help you clean</a
-            >
           </div>
         </div>
         <!-- Maid  -->
-        <div class="service-2 w-full md:w-3/12 text-center">
+        <div class="service-2 w-4/12 md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/maid.jpg" alt="" class="w-full" />
           </div>
-          <div>
+          <div class="mt-10">
             <h2 class="text-2xl font-bold">Maid Cleaning Services</h2>
             <p>
               Transform your space with our exceptional cleaning services. Book
               now and enjoy a pristine and refreshed environment like never
               before.
             </p>
-            <a
-              href=""
-              class="bg-primaryRed text-white p-2 mt-3 inline-block rounded-sm"
-              >Let's help you clean</a
-            >
           </div>
         </div>
       </div>
     </section>
     <!-- Moving Quote -->
     <section class="py-16 px-10">
-      <div class="page bg-white w-7/12 mx-auto relative rounded-sm p-4">
-        <h3 class="font-bold text-xl">Moving Quote</h3>
-        <h5 class="font-bold">
+      <div class="bg-white w-6/12 mx-auto relative rounded-md py-4 px-6">
+        <h3 class="font-bold text-2xl">Moving Quote</h3>
+        <h5 class="font-bold mt-3">
           Fields marked with <font color="red">*</font> are required
         </h5>
-        <div class="progress-container border border-terGrey h-4 rounded-2xl">
-          <div class="progress"></div>
+        <div class="progress-container border border-terGrey h-4 rounded-3xl overflow-hidden mt-5">
+          <div class="progress w-0 bg-primaryRed h-full"></div>
         </div>
         <div class="forms flex">
           <form
@@ -398,14 +398,14 @@
             class="flex justify-between w-full"
           >
             <!-- {% csrf_token %} -->
-            <div id="form2" class="Form2 w-full">
+            <div id="form2" class="Form2 w-full" style="display: block">
               <div class="form__div flex gap-4 mt-8 my-2 mx-0 w-full">
                 <div class="sub-div w-1/2">
                   <label for="first-name">
                     First Name <font color="red">*</font> <br
                   /></label>
                   <input
-                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none focus:border-primaryRed"
                     id="first-name"
                     type="text"
                     name="CLfirst_name"
@@ -416,7 +416,7 @@
                     Last Name <font color="red">*</font> <br
                   /></label>
                   <input
-                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none focus:border-primaryRed"
                     id="last-name"
                     type="text"
                     name="CLlast_name"
@@ -430,7 +430,7 @@
                     Email <font color="red">*</font> <br
                   /></label>
                   <input
-                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none focus:border-primaryRed"
                     id="first-name"
                     type="email"
                     name="CLemail"
@@ -441,7 +441,7 @@
                     Phone <font color="red">*</font> <br
                   /></label>
                   <input
-                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none focus:border-primaryRed"
                     id="phone"
                     type="phone"
                     name="CLphone"
@@ -450,92 +450,101 @@
               </div>
               <div class="button">
                 <button
-                  class="next2 btn rounded-sm text-white bg-secRed py-2 px-4"
+                  class="next2 btn rounded-md text-white bg-secRed py-2 px-4"
                   type="button"
                 >
-                  Next
+                  Next <i class="uil uil-step-forward"></i>
                 </button>
               </div>
             </div>
 
             <div class="Form3 w-full">
               <div class="form__div flex gap-4 my-2 mx-0 w-full">
-                <div class="sub-div this w-1/2">
-                  <p>
+                <div class="sub-div this w-1/2 mt-5">
+                  <p class="font-bold">
                     What services may we assist you with?
                     <font color="red">*</font>
                   </p>
-                  <p>
+                  <p class="flex gap-4 mt-3 mb-1">
                     <input
                       type="checkbox"
                       name="clean1"
                       value="Janitorial / Commercial Cleaning"
                     />
-                    Janitorial / Commercial Cleaning
-                  </p>
-                  <p>
+                    <span>Janitorial / Commercial Cleaning</span>
+                    
+                  </p >
+                  <p class="flex gap-4 mb-1">
                     <input
                       type="checkbox"
                       name="clean2"
                       value="Event / After Party Cleaning"
                     />
-                    Event / After Party Cleaning
+                    <span>Event / After Party Cleaning</span>
+                    
                   </p>
-                  <p>
+                  <p class="flex gap-4 mb-1">
                     <input
                       type="checkbox"
                       name="clean3"
                       value="Home / Residential Cleaning"
                     />
-                    Home / Residential Cleaning
+                    <span>Home / Residential Cleaning</span>
+                    
                   </p>
-                  <p>
+                  <p class="flex gap-4 mb-1">
                     <input
                       type="checkbox"
                       name="clean4"
                       value="Rug / Carpet Cleaning"
                     />
-                    Rug / Carpet Cleaning
+                    <span>Rug / Carpet Cleaning</span>
+                    
                   </p>
-                  <p>
+                  <p class="flex gap-4 mb-1">
                     <input
                       type="checkbox"
                       name="clean5"
                       value="Restaurant Cleaning"
                     />
-                    Restaurant Cleaning
+                    <span>Restaurant Cleaning</span>
+                    
                   </p>
-                  <p>
+                  <p class="flex gap-4 mb-1">
                     <input
                       type="checkbox"
                       name="clean6"
                       value="Post construction/ Pre-moving/ End of Tenancy Cleaning"
                     />
-                    Post construction/ Pre-moving/ End of Tenancy Cleaning
+                    <span>Post construction/ Pre-moving/ End of Tenancy Cleaning</span>
+                    
                   </p>
-                  <p>
+                  <p class="flex gap-4 mb-1">
                     <input
                       type="checkbox"
                       name="clean7"
                       value="Window Cleaning"
                     />
-                    Window Cleaning
+                    <span>Window Cleaning</span>
+                    
                   </p>
-                  <p>
+                  <p class="flex gap-4 mb-1">
                     <input
                       type="checkbox"
                       name="clean8"
                       value="Maid services"
-                    />Maid services
+                    />
+                    <span>Maid services</span>
+                    
                   </p>
                 </div>
 
-                <div class="sub-div w-1/2">
-                  <label for="bedroom-from" class="font-bold">
+                <div class="sub-div w-1/2 mt-5">
+                  <label for="bedroom-from" class="font-bold mt-5">
                     Number of Rooms(s) <br
                   /></label>
                   <select
-                    class="adj w-full border border-secGrey"
+                    class="adj w-full border-b-2 border-secrGrey"
                     name="CLselect"
                     id="bedroom-from"
                   >
@@ -565,12 +574,12 @@
                     <input
                       name="Mdate"
                       type="date"
-                      class="border border-secGrey"
+                      class="border-b-2 border-secrGrey outline-none mr-5"
                     />
                     <input
                       name="Mtime"
                       type="time"
-                      class="border border-secGrey"
+                      class="border-b-2 border-secrGrey outline-none"
                     />
                   </div>
                   <br />
@@ -578,7 +587,7 @@
                     <h4>Enter Additional Moving Information</h4>
                     <textarea
                       name="Mtextarea"
-                      class="border border-secGrey"
+                      class="w-full h-6 border-b-2 border-secrGrey outline-none focus:border-primaryRed"
                     ></textarea>
                   </div>
                 </div>
@@ -586,15 +595,15 @@
               <div class="button">
                 <button
                   type="button"
-                  class="prev3 btn rounded-sm text-white bg-secRed py-2 px-4"
+                  class="prev3 btn rounded-md text-white bg-secRed py-2 px-4"
                 >
-                  Previous
+                  Previous <i class="uil uil-previous"></i>
                 </button>
                 <button
                   type="submit"
-                  class="submit btn rounded-sm text-white bg-secRed py-2 px-4"
+                  class="submit btn bg-primaryRed text-white py-2 px-4 mt-5 rounded-md border hover:bg-white hover:text-primaryRed hover:border-grey"
                 >
-                  Submit
+                  Send Message <i class="uil uil-message"></i>
                 </button>
               </div>
             </div>

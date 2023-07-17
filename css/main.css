@@ -19,12 +19,23 @@ body {
 }
 
 .Form2 {
+  display: none;
   animation: appear 0.6s linear forwards;
 }
-
 .Form3 {
   display: none;
   animation: appear 0.6s linear forwards;
+}
+.progress {
+  background: rgb(207, 10, 17);
+  width: 0%;
+  transition: all linear 0.5s;
+}
+.sidebar {
+  transition: right 0.3s ease-in-out;
+}
+.sidebar.active {
+  right: 0;
 }
 /* Animations */
 @keyframes appear {

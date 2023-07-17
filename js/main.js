@@ -1,3 +1,15 @@
+// Sidebar Toggle
+function toggleSidebar() {
+  sideBar.classList.toggle("right-[-570px]");
+  sideBar.classList.toggle("active");
+  overlay.classList.toggle("hidden");
+}
+let toggleBtn = document.querySelectorAll(".toggleBtn");
+let sideBar = document.querySelector(".sidebar");
+let overlay = document.querySelector(".overlay-screen");
+toggleBtn.forEach((toggleBtn) => {
+  toggleBtn.addEventListener("click", toggleSidebar);
+});
 // FAQ
 function toggleFAQ(event) {
   let clickedFAQ = event.currentTarget;
