@@ -28,8 +28,12 @@
     <!-- Swiper Slider -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    /> -->
     <!-- Tailwind CSS Config File -->
     <script src="js/config.js"></script>
     <title>AB Relocation and Cleaning Service</title>
@@ -38,6 +42,15 @@
     <div
       class="absolute overlay-screen opacity-30 bg-primaryBlack w-full h-full z-20 hidden"
     ></div>
+    <!-- Message -->
+    <a
+      href="https://wa.me/2348024342548"
+      target="_blank"
+      class="fixed bottom-5 bg-primaryRed px-6 py-2 text-white rounded-3xl right-10 z-20"
+    >
+      <span>Send us a message on whatsapp</span>
+      <i class="uil uil-external-link-alt"></i>
+    </a>
     <!-- Top Navigation Menu for Contact Info -->
     <div
       class="sticky top-0 w-full bg-white top_nav flex justify-between p-1 border-b-2 border-grey z-20"
@@ -268,14 +281,14 @@
         </p>
       </div>
       <div
-        class="services flex gap-20 flex-col justify-center mt-10 md:flex-row"
+        class="services flex gap-40 flex-col justify-center mt-20 md:flex-row"
       >
         <!-- =========== -->
-        <div class="service-1 w-full md:w-2/5 text-center">
-          <div class="w-full mx-auto">
-            <img src="img/relocation.jpg" alt="" class="w-full" />
+        <div class="service-1 w-full md:w-4/12 text-center">
+          <div class="w-3/5 mx-auto md:w-full">
+            <img src="img/moving.jpg" alt="" class="w-full" />
           </div>
-          <div>
+          <div class="mt-10">
             <h2 class="text-2xl font-bold">Relocation Services</h2>
             <p>
               Experience a hassle-free move with our expert assistance. Get
@@ -289,11 +302,11 @@
           </div>
         </div>
         <!-- Cleaning Service -->
-        <div class="service-2 w-full md:w-2/5 text-center">
-          <div class="w-full mx-auto">
-            <img src="img/cleaning.jpg" alt="" class="w-full" />
+        <div class="service-2 w-full md:w-4/12 text-center">
+          <div class="w-3/5 mx-auto md:w-full">
+            <img src="img/maid.jpg" alt="" class="w-full" />
           </div>
-          <div>
+          <div class="mt-10">
             <h2 class="text-2xl font-bold">Cleaning Services</h2>
             <p>
               Transform your space with our exceptional cleaning services. Book
@@ -436,10 +449,11 @@
     <section class="px-10 py-10 md:px-16 text-white bg-primaryBlack">
       <h2 class="text-primaryGrey">Moving Testimonials</h2>
       <p class="text-4xl font-bold">What our clients say</p>
-      <div class="swiper mt-10">
-        <div class="swiper-wrapper flex justify-center gap-7">
+      <div class="swiper mySwiper mt-10">
+        <div class="swiper-wrapper">
           <div
-            class="swiper-slide w-1/5 text-center bg-white text-primaryBlack rounded-md p-2"
+            class="swiper-slide text-center bg-white text-primaryBlack rounded-md p-2"
+            style="width: 200px"
           >
             <p>
               The movers were prompt, efficient, and very professional. They
@@ -450,7 +464,7 @@
             <h3 class="font-bold">~Olumide Adewale</h3>
           </div>
           <div
-            class="swiper-slide w-1/5 text-center bg-white text-primaryBlack rounded-md p-2"
+            class="swiper-slide w-3/5 md:w-1/5 text-center bg-white text-primaryBlack rounded-md p-2"
           >
             <p>
               The cleaning crew did an amazing job! They were thorough,
@@ -461,7 +475,7 @@
             <h3 class="font-bold">~Uchechukwu Nwankwo</h3>
           </div>
           <div
-            class="swiper-slide w-1/5 text-center bg-white text-primaryBlack rounded-md p-2"
+            class="swiper-slide w-3/5 md:w-1/5 text-center bg-white text-primaryBlack rounded-md p-2"
           >
             <p>
               I recently used this company for both moving and cleaning services
@@ -472,16 +486,53 @@
             </p>
             <h3 class="font-bold">~Folakemi Adebayo</h3>
           </div>
+          <div
+            class="swiper-slide w-3/5 md:w-1/5 text-center bg-white text-primaryBlack rounded-md p-2"
+          >
+            <p>
+              I was very pleased with the service provided by this company. The
+              movers were punctual, polite, and took great care of my
+              belongings. The cleaning crew did an excellent job, leaving my new
+              home spotless. I would not hesitate to use this company again or
+              recommend them to others.
+            </p>
+            <h3 class="font-bold">~Victor Iyobosa</h3>
+          </div>
+          <div
+            class="swiper-slide w-3/5 md:w-1/5 text-center bg-white text-primaryBlack rounded-md p-2"
+          >
+            <p>
+              This moving and cleaning company exceeded my expectations. The
+              movers were friendly, efficient and took great care of my
+              possessions during the move. The cleaning crew was also fantastic
+              and left my new home spotless. I would highly recommend this
+              company to anyone in need of these services.
+            </p>
+            <h3 class="font-bold">~Faith Daniels</h3>
+          </div>
+          <div
+            class="swiper-slide w-3/5 md:w-1/5 text-center bg-white text-primaryBlack rounded-md p-2"
+          >
+            <p>
+              The team provided excellent service, both in the moving and
+              cleaning aspect. They were professional, efficient and took great
+              care of our belongings and left our new home spotless. Would
+              highly recommend their services to anyone in need of a moving and
+              cleaning company
+            </p>
+            <h3 class="font-bold">~Miracle Osas</h3>
+          </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
     <!-- Our Clients -->
     <section class="px-10 py-10 md:px-16">
       <h2 class="text-primaryGrey">Our Clients</h2>
       <p class="text-4xl font-bold">Who we've worked with</p>
-      <div class="swiper mt-10">
-        <div class="swiper-wrapper flex justify-center gap-7">
+      <div class="mt-10">
+        <div class="flex justify-center gap-7">
           <div class="swiper-slide w-3/12 h-48">
             <img src="img/company_logo4.png" alt="" class="w-full h-full" />
           </div>
@@ -590,7 +641,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>

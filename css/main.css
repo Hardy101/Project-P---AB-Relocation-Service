@@ -37,6 +37,14 @@ body {
 .sidebar.active {
   right: 0;
 }
+.swiper-wrapper {
+  display: flex !important;
+  justify-content: space-center !important;
+  gap: 20px !important;
+}
+.swiper-slide {
+  width: 300px !important;
+}
 /* Animations */
 @keyframes appear {
   0% {

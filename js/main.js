@@ -1,3 +1,9 @@
+let swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 // Sidebar Toggle
 function toggleSidebar() {
   sideBar.classList.toggle("right-[-570px]");
