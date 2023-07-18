@@ -248,7 +248,7 @@
         <!-- Form -->
         <form method="post">
           <!-- {% csrf_token %} -->
-          <div id="form1" class="Form1 hidden">
+          <div id="form1" class="Form1">
             <div class="form__div w-full flex gap-10 mt-4 mb-6">
               <div class="sub-div w-1/2">
                 <label for="adressfrom" class="block">
@@ -260,7 +260,7 @@
                   name="adressfrom"
                   placeholder="Enter a place"
                   type="text"
-                  class="adj w-full border-b-2 border-secrGrey outline-none focus:border-primaryRed"
+                  class="adj w-full border-b-2 border-secrGrey outline-none focus:border-primaryRed mt-3"
                   required
                 />
               </div>
@@ -274,7 +274,7 @@
                   id="adressto"
                   placeholder="Enter a place"
                   type="text"
-                  class="adj w-full border-b-2 border-secrGrey outline-none focus:border-primaryRed"
+                  class="adj w-full border-b-2 border-secrGrey outline-none focus:border-primaryRed mt-3"
                   required
                 />
               </div>
@@ -287,7 +287,7 @@
                 </label>
                 <select
                   name="apartment_from"
-                  class="adj w-full border-b-2 border-secrGrey outline-none"
+                  class="adj w-full border outline-none mt-3"
                 >
                   <option value="Mini Flat">Mini Flat</option>
                   <option value="Flat">Flat</option>
@@ -303,7 +303,7 @@
                 >
                 <select
                   name="apartment_to"
-                  class="adj w-full border-b-2 border-secrGrey outline-none"
+                  class="adj w-full border outline-none mt-3"
                 >
                   <option value="Mini Flat">Mini Flat</option>
                   <option value="Flat">Flat</option>
@@ -319,7 +319,7 @@
                 <label for="bedroom-from">Moving from Bedroom(s) </label>
                 <select
                   name="bedroom_from"
-                  class="adj w-full border-b-2 border-secrGrey outline-none"
+                  class="adj w-full border outline-none mt-3"
                 >
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -332,7 +332,7 @@
                 <label for="bedroom-to">Moving to Bedroom(s) </label>
                 <select
                   name="bedroom_to"
-                  class="adj w-full border-b-2 border-secrGrey outline-none"
+                  class="adj w-full border outline-none mt-3"
                 >
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -348,7 +348,7 @@
                 <label for="floor-from"> Moving from Floor </label>
                 <select
                   name="floor_from"
-                  class="adj w-full border-b-2 border-secrGrey outline-none"
+                  class="adj w-full border outline-none mt-3"
                 >
                   <option value="Ground Floor">Ground Floor</option>
                   <option value="1st Floor">1st Floor</option>
@@ -364,7 +364,7 @@
                 <label for="floor-to"> Moving to Floor </label>
                 <select
                   name="floor_to"
-                  class="adj w-full border-b-2 border-secrGrey outline-none"
+                  class="adj w-full border outline-none mt-3"
                 >
                   <option value="Ground Floor">Ground Floor</option>
                   <option value="1st Floor">1st Floor</option>
@@ -450,7 +450,7 @@
             </div>
           </div>
 
-          <div class="Form3 block">
+          <div class="Form3">
             <div class="form__div mt-4 mb-6">
               <div class="sub-div this mt-5">
                 <h4>
@@ -555,19 +555,99 @@
 
               <div class="mt-5">
                 <p>Upload A Video/ Images Of Your Apartment</p>
-                <input id="file-input" class="select-file mt-4 w-full border-2 border-dashed p-16 custom-file-label" name="file" type="file" />
+                <input
+                  id="file-input"
+                  class="select-file mt-4 w-full border-2 border-dashed p-16 custom-file-label"
+                  name="file"
+                  type="file"
+                />
               </div>
             </div>
 
             <div class="button">
-              <button type="button" class="prev3 btn  rounded-md text-white bg-secRed py-2 px-4">Previous</button>
-              <button type="submit" class="submit btn  rounded-md text-white bg-secRed py-2 px-4">Submit</button>
+              <button
+                type="button"
+                class="prev3 btn rounded-md text-white bg-secRed py-2 px-4"
+              >
+                <i class="uil uil-previous"></i>
+                Previous
+              </button>
+              <button
+                type="submit"
+                class="submit btn rounded-md text-white bg-secRed py-2 px-4"
+              >
+                Submit <i class="uil uil-message"></i>
+              </button>
             </div>
           </div>
         </form>
       </div>
     </section>
-
+    <!-- Book a service -->
+    <section class="px-10 py-10 text-white bg-primaryBlack md:px-16">
+      <div class="flex justify-center gap-10 flex-col md:flex-row">
+        <div class="mb-6 md:my-auto">
+          <span class="text-4xl block">Book a Service Today</span>
+          <span class="text-xl">We are always at your service</span>
+        </div>
+        <div class="flex flex-wrap gap-10 justify-between">
+          <div class="inline-block">
+            <a class="bg-primaryRed px-5 py-2 text-xl rounded-sm"
+              >Get a Quote <i class="uil uil-corner-up-right"></i
+            ></a>
+            <span class="block mt-4 text-center">or call: 08024342548</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="px-10 py-10 text-white bg-secGrey md:px-16">
+      <div>
+        <div class="flex gap-5 justify-between flex-col md:flex-row">
+          <!-- First DIV -->
+          <div class="w-full md:w-4/12">
+            <h3>ABRM SERVICES</h3>
+            <p>
+              AB RELOCATION AND MAINTENANCE SERVICES is a professional service
+              company that provides moving and cleaning solutions to make your
+              relocating process easy and stress-free and meet your cleaning
+              demands. Contact us today for a free estimate!
+            </p>
+          </div>
+          <!-- Second Div -->
+          <div class="w-full md:w-1/5">
+            <ul>
+              <li><span>Quick Links</span></li>
+              <li><a href="">Moving Service</a></li>
+              <li><a href="">Cleaning Service</a></li>
+              <li><a href="">About Us</a></li>
+            </ul>
+          </div>
+          <!-- Third DIV -->
+          <div class="w-full md:w-1/5">
+            <ul>
+              <li><span>Company</span></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms and Conditions</a></li>
+              <li><a href="">Refund Policy</a></li>
+            </ul>
+          </div>
+          <!-- Fourth DIV -->
+          <div class="w-full md:w-1/5">
+            <ul>
+              <li><span>Contact Us</span></li>
+              <li><span>210, Ekenwan Rd, Benin City, Edo State</span></li>
+              <li><a href="tel:+2348024342548">08024342548</a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-5">
+          <span>Copyright 2022 ABRM_SERVICES. All right reserved.</span>
+        </div>
+      </div>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>

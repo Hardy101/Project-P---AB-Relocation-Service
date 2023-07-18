@@ -35,46 +35,51 @@
     <title>AB Relocation and Cleaning Service</title>
   </head>
   <body class="bg-[#f5f5f5] relative">
+    <!-- Overlay -->
+    <div
+      class="absolute overlay-screen opacity-30 bg-primaryBlack w-full h-full z-20 hidden"
+    ></div>
     <!-- Top Navigation Menu for Contact Info -->
     <div
-    class="sticky top-0 w-full bg-white top_nav flex justify-between p-1 border-b-2 border-grey z-20"
-  >
-    <div class="inline-block my-auto">
-      <a class="mr-3" href="tel:+2348024342548"
-        ><span class="hidden md:inline-block">Phone: </span>+2348024342548</a
-      >
-      <a class="mr-3" href="mailto:abrelocationservices@gmail.com">
-        <span class="hidden md:inline-block">Email: </span
-        >abrelocationservices@gmail.com</a
-      >
-      <p class="inline-block">
-        <span class="hidden md:inline-block">Opening Time:</span> Mon-Sat:
-        8:00am-9:00pm
-      </p>
+      class="sticky top-0 w-full bg-white top_nav flex justify-between p-1 border-b-2 border-grey z-20"
+    >
+      <div class="inline-block my-auto">
+        <a class="mr-3" href="tel:+2348024342548"
+          ><span class="hidden md:inline-block">Phone: </span>+2348024342548</a
+        >
+        <a class="mr-3" href="mailto:abrelocationservices@gmail.com">
+          <span class="hidden md:inline-block">Email: </span
+          >abrelocationservices@gmail.com</a
+        >
+        <p class="inline-block">
+          <span class="hidden md:inline-block">Opening Time:</span> Mon-Sat:
+          8:00am-9:00pm
+        </p>
+      </div>
+      <div class="hidden md:inline-block">
+        <a class="mr-3" href="https://m.facebook.com/112619148173500"
+          ><i class="uil uil-facebook-f text-2xl"></i>
+          <span>facebook</span>
+        </a>
+        <a class="mr-3" href="https://www.instagram.com/abrm_services/"
+          ><i class="uil uil-instagram text-2xl"></i>
+          <span>instagram</span>
+        </a>
+        <a href="mailto:abrelocationservices@gmail.com"
+          ><i class="uil uil-envelope-alt text-2xl"></i>
+          <span>email</span>
+        </a>
+      </div>
     </div>
-    <div class="hidden md:inline-block">
-      <a class="mr-3" href="https://m.facebook.com/112619148173500"
-        ><i class="uil uil-facebook-f text-2xl"></i>
-        <span>facebook</span>
-      </a>
-      <a class="mr-3" href="https://www.instagram.com/abrm_services/"
-        ><i class="uil uil-instagram text-2xl"></i>
-        <span>instagram</span>
-      </a>
-      <a href="mailto:abrelocationservices@gmail.com"
-        ><i class="uil uil-envelope-alt text-2xl"></i>
-        <span>email</span>
-      </a>
-    </div>
-  </div>
-  <!-- Message -->
-  <a
-  href="https://wa.me/2348024342548" target="_blank"
-  class="fixed bottom-5 bg-primaryRed px-6 py-2 text-white rounded-3xl right-10 z-20"
->
-  <span>Send us a message on whatsapp</span>
-  <i class="uil uil-external-link-alt"></i>
-</a>
+    <!-- Message -->
+    <a
+      href="https://wa.me/2348024342548"
+      target="_blank"
+      class="fixed bottom-5 bg-primaryRed px-6 py-2 text-white rounded-3xl right-10 z-20"
+    >
+      <span>Send us a message on whatsapp</span>
+      <i class="uil uil-external-link-alt"></i>
+    </a>
     <!-- Navigation Menu -->
     <nav>
       <div class="bg-white flex justify-between p-3">
@@ -197,9 +202,9 @@
         </button>
       </div>
     </nav>
-      <!-- Side Bar -->
-      <div
-      class="sidebar w-3/5 h-full fixed right-[-570px] px-5 z-30 bg-white md:hidden"
+    <!-- Side Bar -->
+    <div
+      class="sidebar w-3/5 h-full fixed top-0 right-[-570px] px-5 z-30 bg-white md:hidden"
     >
       <ul>
         <li class="my-2 text-right">
@@ -391,12 +396,14 @@
     </section>
     <!-- Moving Quote -->
     <section class="py-16 px-10">
-      <div class="bg-white w-6/12 mx-auto relative rounded-md py-4 px-6">
+      <div class="bg-white w-full md:w-6/12 mx-auto relative rounded-md py-4 px-6">
         <h3 class="font-bold text-2xl">Moving Quote</h3>
         <h5 class="font-bold mt-3">
           Fields marked with <font color="red">*</font> are required
         </h5>
-        <div class="progress-container border border-terGrey h-4 rounded-3xl overflow-hidden mt-5">
+        <div
+          class="progress-container border border-terGrey h-4 rounded-3xl overflow-hidden mt-5"
+        >
           <div class="progress w-0 bg-primaryRed h-full"></div>
         </div>
         <div class="forms flex">
@@ -480,8 +487,7 @@
                       value="Janitorial / Commercial Cleaning"
                     />
                     <span>Janitorial / Commercial Cleaning</span>
-                    
-                  </p >
+                  </p>
                   <p class="flex gap-4 mb-1">
                     <input
                       type="checkbox"
@@ -489,7 +495,6 @@
                       value="Event / After Party Cleaning"
                     />
                     <span>Event / After Party Cleaning</span>
-                    
                   </p>
                   <p class="flex gap-4 mb-1">
                     <input
@@ -498,7 +503,6 @@
                       value="Home / Residential Cleaning"
                     />
                     <span>Home / Residential Cleaning</span>
-                    
                   </p>
                   <p class="flex gap-4 mb-1">
                     <input
@@ -507,7 +511,6 @@
                       value="Rug / Carpet Cleaning"
                     />
                     <span>Rug / Carpet Cleaning</span>
-                    
                   </p>
                   <p class="flex gap-4 mb-1">
                     <input
@@ -516,7 +519,6 @@
                       value="Restaurant Cleaning"
                     />
                     <span>Restaurant Cleaning</span>
-                    
                   </p>
                   <p class="flex gap-4 mb-1">
                     <input
@@ -524,8 +526,10 @@
                       name="clean6"
                       value="Post construction/ Pre-moving/ End of Tenancy Cleaning"
                     />
-                    <span>Post construction/ Pre-moving/ End of Tenancy Cleaning</span>
-                    
+                    <span
+                      >Post construction/ Pre-moving/ End of Tenancy
+                      Cleaning</span
+                    >
                   </p>
                   <p class="flex gap-4 mb-1">
                     <input
@@ -534,7 +538,6 @@
                       value="Window Cleaning"
                     />
                     <span>Window Cleaning</span>
-                    
                   </p>
                   <p class="flex gap-4 mb-1">
                     <input
@@ -543,7 +546,6 @@
                       value="Maid services"
                     />
                     <span>Maid services</span>
-                    
                   </p>
                 </div>
 
