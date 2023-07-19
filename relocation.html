@@ -75,7 +75,7 @@
     <a
       href="https://wa.me/2348024342548"
       target="_blank"
-      class="fixed bottom-5 bg-primaryRed px-6 py-2 text-white rounded-3xl right-10 z-20"
+      class="fixed bottom-5 bg-primaryRed px-6 py-2 text-white rounded-3xl right-4 z-20"
     >
       <span>Send us a message on whatsapp</span>
       <i class="uil uil-external-link-alt"></i>
@@ -235,7 +235,12 @@
       class="h-[90vh] grid place-items-center relative px-3 md:h-[70vh]"
       id="hero"
     >
-      <div class="overlay absolute w-full h-full bg-black opacity-30"></div>
+      <div
+        class="overlay absolute w-full h-full bg-black opacity-30 z-10"
+      ></div>
+      <div class="imageDiv image-1"></div>
+      <div class="imageDiv image-2 fadeInClass"></div>
+      <div class="imageDiv image-3 fadeInClass"></div>
       <div class="w-full mx-auto z-10 text-white md:w-7/12">
         <h1 class="text-2xl font-bold my-4">Moving Service</h1>
         <p>
@@ -403,12 +408,10 @@
       </div>
     </section>
     <!-- Moving Quote -->
-    <section class="py-16 px-10">
-      <div
-        class="page bg-white w-full md:w-7/12 mx-auto relative rounded-sm p-4"
-      >
+    <section class="py-16 px-3 md:px-10">
+      <div class="bg-white w-full md:w-7/12 mx-auto relative rounded-sm p-4">
         <h3 class="font-bold text-xl">Moving Quote</h3>
-        <h5 class="font-bold">
+        <h5 class="font-bold mb-4 mt-2">
           Fields marked with <font color="red">*</font> are required
         </h5>
         <div
@@ -424,10 +427,10 @@
           >
             <!-- {% csrf_token %} -->
             <div id="form1" class="Form1 w-full">
-              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+              <div class="form__div flex gap-4 mt-4 mb-6 mx-0 w-full">
                 <div class="sub-div w-1/2">
                   <label for="adressfrom">
-                    Moving from Adress <font color="red">*</font> <br
+                    Moving from Address <font color="red">*</font> <br
                   /></label>
                   <input
                     autocomplete="address-line1"
@@ -435,7 +438,7 @@
                     name="adressfrom"
                     placeholder="Enter a place"
                     type="text"
-                    class="adj w-full border border-terGrey py-1 focus:outline-none"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none focus:border-primaryRed"
                     required
                   />
                 </div>
@@ -449,20 +452,20 @@
                     id="adressto"
                     placeholder="Enter a place"
                     type="text"
-                    class="adj w-full border border-terGrey py-1 focus:outline-none"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none focus:border-primaryRed"
                     required
                   />
                 </div>
               </div>
 
-              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+              <div class="form__div flex gap-4 mt-4 mb-6 mx-0 w-full">
                 <div class="sub-div w-1/2">
                   <label for="apartment-from">
                     Moving from Apartment <font color="red">*</font> <br
                   /></label>
                   <select
                     name="apartment_from"
-                    class="adj w-full border border-terGrey py-1"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
                   >
                     <option value="Mini Flat">Mini Flat</option>
                     <option value="Flat">Flat</option>
@@ -478,7 +481,7 @@
                   /></label>
                   <select
                     name="apartment_to"
-                    class="adj w-full border border-terGrey py-1"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
                   >
                     <option value="Mini Flat">Mini Flat</option>
                     <option value="Flat">Flat</option>
@@ -489,14 +492,14 @@
                 </div>
               </div>
 
-              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+              <div class="form__div flex gap-4 mt-4 mb-6 mx-0 w-full">
                 <div class="sub-div w-1/2">
                   <label for="bedroom-from">
                     Moving from Bedroom(s) <br
                   /></label>
                   <select
                     name="bedroom_from"
-                    class="adj w-full border border-terGrey py-1"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
                   >
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -509,7 +512,7 @@
                   <label for="bedroom-to"> Moving to Bedroom(s) <br /></label>
                   <select
                     name="bedroom_to"
-                    class="adj w-full border border-terGrey py-1"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
                   >
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -520,12 +523,12 @@
                 </div>
               </div>
 
-              <div class="form__div flex gap-4 my-2 mx-0 w-full">
+              <div class="form__div flex gap-4 mt-4 mb-6 mx-0 w-full">
                 <div class="sub-div w-1/2">
                   <label for="floor-from"> Moving from Floor <br /></label>
                   <select
                     name="floor_from"
-                    class="adj w-full border border-terGrey py-1"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
                   >
                     <option value="Ground Floor">Ground Floor</option>
                     <option value="1st Floor">1st Floor</option>
@@ -541,7 +544,7 @@
                   <label for="floor-to"> Moving to Floor <br /></label>
                   <select
                     name="floor_to"
-                    class="adj w-full border border-terGrey py-1"
+                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none"
                   >
                     <option value="Ground Floor">Ground Floor</option>
                     <option value="1st Floor">1st Floor</option>
@@ -561,7 +564,7 @@
                   class="next1 btn rounded-sm text-white bg-secRed py-2 px-4"
                   type="button"
                 >
-                  Next
+                  Next <i class="uil uil-step-forward"></i>
                 </button>
               </div>
             </div>
@@ -616,18 +619,18 @@
                   />
                 </div>
               </div>
-              <div class="button">
+              <div class="button flex justify-between">
                 <button
                   class="prev2 btn rounded-sm text-white bg-secRed py-2 px-4"
                   type="button"
                 >
-                  Previous
+                  <i class="uil uil-previous"></i>Previous
                 </button>
                 <button
                   class="next2 btn rounded-sm text-white bg-secRed py-2 px-4"
                   type="button"
                 >
-                  Next
+                  Next <i class="uil uil-step-forward"></i>
                 </button>
               </div>
             </div>
@@ -755,7 +758,7 @@
                   type="button"
                   class="prev3 btn rounded-sm text-white bg-secRed py-2 px-4"
                 >
-                  Previous
+                  <i class="uil uil-previous"></i>Previous
                 </button>
                 <button
                   type="submit"

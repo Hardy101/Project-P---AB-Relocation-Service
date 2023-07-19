@@ -75,7 +75,7 @@
     <a
       href="https://wa.me/2348024342548"
       target="_blank"
-      class="fixed bottom-5 bg-primaryRed px-6 py-2 text-white rounded-3xl right-10 z-20"
+      class="fixed bottom-5 bg-primaryRed px-6 py-2 text-white rounded-3xl right-4 z-20"
     >
       <span>Send us a message on whatsapp</span>
       <i class="uil uil-external-link-alt"></i>
@@ -396,7 +396,9 @@
     </section>
     <!-- Moving Quote -->
     <section class="py-16 px-10">
-      <div class="bg-white w-full md:w-6/12 mx-auto relative rounded-md py-4 px-6">
+      <div
+        class="bg-white w-full md:w-6/12 mx-auto relative rounded-md py-4 px-6"
+      >
         <h3 class="font-bold text-2xl">Moving Quote</h3>
         <h5 class="font-bold mt-3">
           Fields marked with <font color="red">*</font> are required
@@ -416,18 +418,18 @@
             <div id="form2" class="Form2 w-full" style="display: block">
               <div class="form__div flex gap-4 mt-8 my-2 mx-0 w-full">
                 <div class="sub-div w-1/2">
-                  <label for="first-name">
+                  <label for="first-name" class="text-black">
                     First Name <font color="red">*</font> <br
                   /></label>
                   <input
-                    class="adj w-full border-b-2 border-secrGrey py-1 outline-none focus:border-primaryRed"
+                    class="adj w-full border-b-2 py-1 outline-none focus:border-primaryRed"
                     id="first-name"
                     type="text"
                     name="CLfirst_name"
                   />
                 </div>
                 <div class="sub-div w-1/2">
-                  <label for="last-name">
+                  <label for="last-name" class="text-black">
                     Last Name <font color="red">*</font> <br
                   /></label>
                   <input
@@ -441,7 +443,7 @@
 
               <div class="form__div flex gap-4 mt-8 mb-4 mx-0 w-full">
                 <div class="sub-div w-1/2">
-                  <label for="email">
+                  <label for="email" class="text-black">
                     Email <font color="red">*</font> <br
                   /></label>
                   <input
@@ -452,7 +454,7 @@
                   />
                 </div>
                 <div class="sub-div w-1/2">
-                  <label for="phone">
+                  <label for="phone" class="text-black">
                     Phone <font color="red">*</font> <br
                   /></label>
                   <input
@@ -474,82 +476,84 @@
             </div>
 
             <div class="Form3 w-full">
-              <div class="form__div flex gap-4 my-2 mx-0 w-full">
-                <div class="sub-div this w-1/2 mt-5">
+              <div class="form__div my-2 mx-0 w-full">
+                <div class="sub-div this mt-5">
                   <p class="font-bold">
                     What services may we assist you with?
                     <font color="red">*</font>
                   </p>
-                  <p class="flex gap-4 mt-3 mb-1">
-                    <input
-                      type="checkbox"
-                      name="clean1"
-                      value="Janitorial / Commercial Cleaning"
-                    />
-                    <span>Janitorial / Commercial Cleaning</span>
-                  </p>
-                  <p class="flex gap-4 mb-1">
-                    <input
-                      type="checkbox"
-                      name="clean2"
-                      value="Event / After Party Cleaning"
-                    />
-                    <span>Event / After Party Cleaning</span>
-                  </p>
-                  <p class="flex gap-4 mb-1">
-                    <input
-                      type="checkbox"
-                      name="clean3"
-                      value="Home / Residential Cleaning"
-                    />
-                    <span>Home / Residential Cleaning</span>
-                  </p>
-                  <p class="flex gap-4 mb-1">
-                    <input
-                      type="checkbox"
-                      name="clean4"
-                      value="Rug / Carpet Cleaning"
-                    />
-                    <span>Rug / Carpet Cleaning</span>
-                  </p>
-                  <p class="flex gap-4 mb-1">
-                    <input
-                      type="checkbox"
-                      name="clean5"
-                      value="Restaurant Cleaning"
-                    />
-                    <span>Restaurant Cleaning</span>
-                  </p>
-                  <p class="flex gap-4 mb-1">
-                    <input
-                      type="checkbox"
-                      name="clean6"
-                      value="Post construction/ Pre-moving/ End of Tenancy Cleaning"
-                    />
-                    <span
-                      >Post construction/ Pre-moving/ End of Tenancy
-                      Cleaning</span
-                    >
-                  </p>
-                  <p class="flex gap-4 mb-1">
-                    <input
-                      type="checkbox"
-                      name="clean7"
-                      value="Window Cleaning"
-                    />
-                    <span>Window Cleaning</span>
-                  </p>
-                  <p class="flex gap-4 mb-1">
-                    <input
-                      type="checkbox"
-                      name="clean8"
-                      value="Maid services"
-                    />
-                    <span>Maid services</span>
-                  </p>
+                  <div class="flex gap-5 flex-wrap">
+                    <p class="flex gap-4 mt-3 mb-1 my-auto">
+                      <input
+                        type="checkbox"
+                        name="clean1"
+                        value="Janitorial / Commercial Cleaning"
+                      />
+                      <span>Janitorial / Commercial Cleaning</span>
+                    </p>
+                    <p class="flex gap-4 mb-1 my-auto">
+                      <input
+                        type="checkbox"
+                        name="clean2"
+                        value="Event / After Party Cleaning"
+                      />
+                      <span>Event / After Party Cleaning</span>
+                    </p>
+                    <p class="flex gap-4 mb-1">
+                      <input
+                        type="checkbox"
+                        name="clean3"
+                        value="Home / Residential Cleaning"
+                      />
+                      <span>Home / Residential Cleaning</span>
+                    </p>
+                    <p class="flex gap-4 mb-1">
+                      <input
+                        type="checkbox"
+                        name="clean4"
+                        value="Rug / Carpet Cleaning"
+                      />
+                      <span>Rug / Carpet Cleaning</span>
+                    </p>
+                    <p class="flex gap-4 mb-1">
+                      <input
+                        type="checkbox"
+                        name="clean5"
+                        value="Restaurant Cleaning"
+                      />
+                      <span>Restaurant Cleaning</span>
+                    </p>
+                    <p class="flex gap-4 mb-1">
+                      <input
+                        type="checkbox"
+                        name="clean6"
+                        value="Post construction/ Pre-moving/ End of Tenancy Cleaning"
+                      />
+                      <span
+                        >Post construction/ Pre-moving/ End of Tenancy
+                        Cleaning</span
+                      >
+                    </p>
+                    <p class="flex gap-4 mb-1">
+                      <input
+                        type="checkbox"
+                        name="clean7"
+                        value="Window Cleaning"
+                      />
+                      <span>Window Cleaning</span>
+                    </p>
+                    <p class="flex gap-4 mb-1">
+                      <input
+                        type="checkbox"
+                        name="clean8"
+                        value="Maid services"
+                      />
+                      <span>Maid services</span>
+                    </p>
+                  </div>
                 </div>
 
-                <div class="sub-div w-1/2 mt-5">
+                <div class="sub-div mt-5">
                   <label for="bedroom-from" class="font-bold mt-5">
                     Number of Rooms(s) <br
                   /></label>
@@ -579,17 +583,16 @@
                     Booking Date <font color="red">*</font>
                   </h4>
 
-                  <div>
-                    <p class="font-bold">Choose a Date and Time</p>
+                  <div class="flex gap-10 justify-between">
                     <input
                       name="Mdate"
                       type="date"
-                      class="border-b-2 border-secrGrey outline-none mr-5"
+                      class="border-b-2 w-1/2 outline-none mr-5"
                     />
                     <input
                       name="Mtime"
                       type="time"
-                      class="border-b-2 border-secrGrey outline-none"
+                      class="border-b-2 w-1/2 outline-none"
                     />
                   </div>
                   <br />
@@ -597,7 +600,7 @@
                     <h4>Enter Additional Moving Information</h4>
                     <textarea
                       name="Mtextarea"
-                      class="w-full h-6 border-b-2 border-secrGrey outline-none focus:border-primaryRed"
+                      class="w-full h-6 border-b-2 outline-none focus:border-primaryRed"
                     ></textarea>
                   </div>
                 </div>

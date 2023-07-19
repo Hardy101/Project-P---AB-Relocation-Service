@@ -5,9 +5,43 @@ body {
   font-family: "Catamaran", sans-serif;
 }
 #hero {
-  background-image: url("../img/hero.jpg");
+  overflow: hidden;
+  /* background-image: url("../img/hero.jpg");
   background-position: center;
+  background-size: cover; */
+}
+.imageDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-size: cover;
+}
+.image-1 {
+  background-image: url("../img/relocation-1.jpg");
+}
+.image-2 {
+  background-image: url("../img/relocation-2.jpg");
+}
+.fadeInClass {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .cleaning {
   background-image: url("../img/cleaning-bg.jpg");
@@ -46,14 +80,13 @@ body {
   width: 300px !important;
 }
 .select-file::before {
-  content: "Click here or Drag and drop a file";
+  content: "Select file";
+  color: rgb(207, 10, 17);
   font-size: 20px;
   font-weight: bold;
   display: inline-block;
-  text-align: center;
-  height: 100%;
   width: 100%;
-  cursor: pointer;
+  text-align: center;
 }
 .select-file {
   background-color: #f8f9fd;
