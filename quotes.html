@@ -1,3 +1,4 @@
+<!-- {% load static %} -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,10 +31,6 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    /> -->
     <!-- Tailwind CSS Config File -->
     <script src="js/config.js"></script>
     <title>AB Relocation and Cleaning Service</title>
@@ -86,7 +83,7 @@
     <!-- Navigation Menu -->
     <nav>
       <div class="bg-white flex justify-between p-3">
-        <a href="">
+        <a href="index.html">
           <svg
             data-v-2cb57da0=""
             version="1.0"
@@ -185,7 +182,9 @@
             </g>
             <defs v-gra="od"></defs></svg
         ></a>
-        <ul class="justify-between gap-6 inline-block my-auto hidden md:flex">
+        <ul
+          class="justify-between gap-6 inline-block my-auto hidden md:flex listsa"
+        >
           <li class="my-auto"><a href="index.html">Home</a></li>
           <li class="my-auto"><a href="relocation.html">Relocation</a></li>
           <li class="my-auto"><a href="cleaning.html">Cleaning</a></li>
@@ -220,9 +219,7 @@
         <li class="mb-2 mt-4"><a href="index.html">Home</a></li>
         <li class="my-2"><a href="about.html">About</a></li>
         <li class="my-2">
-          <a href="cleaning.html"
-            >Cleaning <i class="uil uil-angle-down"></i
-          ></a>
+          <a href="cleaning.html">Cleaning <i class="uil uil-angle-down"></i></a>
         </li>
         <li class="my-2">
           <a href="relocation.html"
@@ -246,7 +243,8 @@
           <div class="progress w-0 bg-primaryRed h-full"></div>
         </div>
         <!-- Form -->
-        <form method="post">
+        <form method="post"
+        enctype="multipart/form-data">
           <!-- {% csrf_token %} -->
           <div id="form1" class="Form1">
             <div class="form__div w-full flex gap-10 mt-4 mb-6">

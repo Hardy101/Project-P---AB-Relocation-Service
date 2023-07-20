@@ -83,7 +83,7 @@
     <!-- Navigation Menu -->
     <nav>
       <div class="bg-white flex justify-between p-3">
-        <a href="">
+        <a href="index.html">
           <svg
             data-v-2cb57da0=""
             version="1.0"
@@ -182,7 +182,9 @@
             </g>
             <defs v-gra="od"></defs></svg
         ></a>
-        <ul class="justify-between gap-6 inline-block my-auto hidden md:flex">
+        <ul
+          class="justify-between gap-6 inline-block my-auto hidden md:flex listsa"
+        >
           <li class="my-auto"><a href="index.html">Home</a></li>
           <li class="my-auto"><a href="relocation.html">Relocation</a></li>
           <li class="my-auto"><a href="cleaning.html">Cleaning</a></li>
@@ -247,7 +249,7 @@
           Expectations!
         </p>
         <div class="text-center mt-4">
-          <a href="" class="py-2 px-4 bg-primaryRed rounded-sm"
+          <a href="quotes.html" class="py-2 px-4 bg-primaryRed rounded-sm"
             >Get a Quote <i class="uil uil-corner-up-right"></i
           ></a>
         </div>
@@ -279,10 +281,10 @@
         </p>
       </div>
       <div
-        class="services flex gap-20 flex-wrap justify-between mt-16 md:flex-row"
+        class="services flex flex-col gap-20 flex-wrap justify-between mt-16 md:flex-row"
       >
         <!-- Local move -->
-        <div class="service-1 w-4/12 md:w-3/12 text-center">
+        <div class="service-1 w-full md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/janitor.jpg" alt="" class="w-full" />
           </div>
@@ -295,7 +297,7 @@
           </div>
         </div>
         <!-- After Party -->
-        <div class="service-2 w-4/12 md:w-3/12 text-center">
+        <div class="service-2 w-full md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/after-party.jpg" alt="" class="w-full" />
           </div>
@@ -309,7 +311,7 @@
           </div>
         </div>
         <!-- Residential -->
-        <div class="service-2 w-4/12 md:w-3/12 text-center">
+        <div class="service-2 w-full md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/home-cleaning.jpg" alt="" class="w-full" />
           </div>
@@ -323,7 +325,7 @@
           </div>
         </div>
         <!-- Rug Cleaning -->
-        <div class="service-2 w-4/12 md:w-3/12 text-center">
+        <div class="service-2 w-full md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/rug.jpg" alt="" class="w-full" />
           </div>
@@ -337,7 +339,7 @@
           </div>
         </div>
         <!-- Restaurant Cleaning -->
-        <div class="service-2 w-4/12 md:w-3/12 text-center">
+        <div class="service-2 w-full md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/restaurant.jpg" alt="" class="w-full" />
           </div>
@@ -351,7 +353,7 @@
           </div>
         </div>
         <!-- Post Construction Cleanup -->
-        <div class="service-2 w-4/12 md:w-3/12 text-center">
+        <div class="service-2 w-full md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/construction.jpg" alt="" class="w-full" />
           </div>
@@ -365,7 +367,7 @@
           </div>
         </div>
         <!-- Window Cleaning -->
-        <div class="service-2 w-4/12 md:w-3/12 text-center">
+        <div class="service-2 w-full md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/window.jpg" alt="" class="w-full" />
           </div>
@@ -379,7 +381,7 @@
           </div>
         </div>
         <!-- Maid  -->
-        <div class="service-2 w-4/12 md:w-3/12 text-center">
+        <div class="service-2 w-full md:w-3/12 text-center">
           <div class="w-full mx-auto">
             <img src="img/maid.jpg" alt="" class="w-full" />
           </div>
@@ -414,7 +416,6 @@
             enctype="multipart/form-data"
             class="flex justify-between w-full"
           >
-            <!-- {% csrf_token %} -->
             <div id="form2" class="Form2 w-full" style="display: block">
               <div class="form__div flex gap-4 mt-8 my-2 mx-0 w-full">
                 <div class="sub-div w-1/2">
@@ -660,7 +661,7 @@
         </div>
         <div class="flex flex-wrap gap-10 justify-between">
           <div class="inline-block">
-            <a class="bg-primaryRed px-5 py-2 text-xl rounded-sm"
+            <a href="/quotes" class="bg-primaryRed px-5 py-2 text-xl rounded-sm"
               >Get a Quote <i class="uil uil-corner-up-right"></i
             ></a>
             <span class="block mt-4 text-center">or call: 08024342548</span>
@@ -686,18 +687,18 @@
           <div class="w-full md:w-1/5">
             <ul>
               <li><span>Quick Links</span></li>
-              <li><a href="">Moving Service</a></li>
-              <li><a href="">Cleaning Service</a></li>
-              <li><a href="">About Us</a></li>
+              <li><a href="/relocation">Moving Service</a></li>
+              <li><a href="/cleaning">Cleaning Service</a></li>
+              <li><a href="/about">About Us</a></li>
             </ul>
           </div>
           <!-- Third DIV -->
           <div class="w-full md:w-1/5">
             <ul>
               <li><span>Company</span></li>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Terms and Conditions</a></li>
-              <li><a href="">Refund Policy</a></li>
+              <li><a href="termsandconditions">Privacy Policy</a></li>
+              <li><a href="termsandconditions">Terms and Conditions</a></li>
+              <li><a href="termsandconditions">Refund Policy</a></li>
             </ul>
           </div>
           <!-- Fourth DIV -->
@@ -706,8 +707,6 @@
               <li><span>Contact Us</span></li>
               <li><span>210, Ekenwan Rd, Benin City, Edo State</span></li>
               <li><a href="tel:+2348024342548">08024342548</a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
             </ul>
           </div>
         </div>

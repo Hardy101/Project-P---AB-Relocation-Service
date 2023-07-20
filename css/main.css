@@ -6,9 +6,9 @@ body {
 }
 #hero {
   overflow: hidden;
-  /* background-image: url("../img/hero.jpg");
-  background-position: center;
-  background-size: cover; */
+}
+.listsa {
+  animation: animateMenu 0.2s linear forwards;
 }
 .imageDiv {
   position: absolute;
@@ -21,6 +21,12 @@ body {
 }
 .image-2 {
   background-image: url("../img/relocation-2.jpg");
+}
+.image-4 {
+  background-image: url("../img/moving.jpg");
+}
+.image-5 {
+  background-image: url("../img/janitor.jpg");
 }
 .fadeInClass {
   animation-name: fadeIn;
